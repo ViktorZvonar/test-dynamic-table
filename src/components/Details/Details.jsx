@@ -2,6 +2,7 @@ import React from 'react';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import { useParams } from 'react-router-dom';
 import { getData } from '../../shared/services/api';
+import styles from './Details.module.css';
 
 function Details() {
   const { id } = useParams();
@@ -27,25 +28,29 @@ function Details() {
       <h2>{authorData.Author}</h2>
       <table>
         <tbody>
-          <tr>
+          <tr tabIndex="0" className={styles.detailRow}>
             <th>Title</th>
             <td>{authorData.Title}</td>
           </tr>
-          <tr>
+          <tr tabIndex="0" className={styles.detailRow}>
             <th>Genre</th>
             <td>{authorData.Genre}</td>
           </tr>
-          <tr>
+          <tr tabIndex="0" className={styles.detailRow}>
             <th>Format</th>
             <td>{authorData.Format}</td>
           </tr>
-          <tr>
-            <th>Price</th>
-            <td>{authorData.Price}</td>
+          <tr tabIndex="0" className={styles.detailRow}>
+            <th>Pages</th>
+            <td>{authorData.Pages}</td>
           </tr>
-          <tr>
+          <tr tabIndex="0" className={styles.detailRow}>
             <th>Available</th>
-            <td>{authorData.Available ? 'Yes' : 'No'}</td>
+            <td>
+              {authorData.Available
+                ? 'Yes, you can borrow'
+                : 'No, it is already borrowed'}
+            </td>
           </tr>
         </tbody>
       </table>

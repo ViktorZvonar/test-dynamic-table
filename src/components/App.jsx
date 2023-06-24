@@ -6,8 +6,16 @@ import Details from './Details/Details';
 
 export const App = () => {
   return (
-    <div>
-      <h1>My Dynamic Table</h1>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        color: '#010101',
+      }}
+    >
+      <h3>Welcome to the Municipal Library Infocenter</h3>
 
       <Routes>
         <Route path="/" element={<DataTable />} />

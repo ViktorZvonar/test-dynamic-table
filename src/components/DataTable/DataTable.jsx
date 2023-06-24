@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import styles from './DataTable.module.css';
 import { useTable } from 'react-table';
 import { Link } from 'react-router-dom';
 import { getData } from '../../shared/services/api';
 
 function DataTable() {
   const [data, setData] = useState([]);
-  const [selectedRow, setSelectedRow] = useState(null);
 
   const columns = React.useMemo(
     () => [
       {
-        Header: 'Author',
+        Header: 'Pick an author',
         accessor: 'Author',
         Cell: ({ cell: { value }, row: { original } }) => (
           <Link to={`/author/${original.id}`}>{value}</Link>
@@ -50,16 +50,7 @@ function DataTable() {
         {rows.map(row => {
           prepareRow(row);
           return (
-            <tr
-              {...row.getRowProps()}
-              onClick={() => setSelectedRow(row.original)}
-              style={{
-                background:
-                  selectedRow && row.original.id === selectedRow.id
-                    ? '#00afec'
-                    : 'white',
-              }}
-            >
+            <tr {...row.getRowProps()} tabIndex="0" className={styles.tableRow}>
               {row.cells.map(cell => {
                 return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>;
               })}
