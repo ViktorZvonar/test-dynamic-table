@@ -33,10 +33,7 @@ function DataTable() {
     useTable({ columns, data });
 
   return (
-    <table
-      {...getTableProps()}
-      style={{ margin: 'auto', width: '80%', textAlign: 'center' }}
-    >
+    <table {...getTableProps()} className={styles.table}>
       <thead>
         {headerGroups.map(headerGroup => (
           <tr {...headerGroup.getHeaderGroupProps()}>
