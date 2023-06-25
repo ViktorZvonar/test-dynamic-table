@@ -48,12 +48,12 @@
 .voteCell {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* optional, if you want to vertically center content */
+  align-items: center;
 }
 
 .buttonContainer {
   display: flex;
-  gap: 10px; /* optional, if you want a gap between buttons */
+  gap: 10px;
 }
 
 .button {

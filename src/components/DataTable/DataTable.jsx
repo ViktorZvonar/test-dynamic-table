@@ -1,28 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styles from './DataTable.module.css';
 import { useTable } from 'react-table';
-import { Link } from 'react-router-dom';
 import { getData } from '../../shared/services/api';
+import { columns } from 'shared/utils/columnFunc';
 
 function DataTable() {
   const [data, setData] = useState([]);
-
-  const columns = React.useMemo(
-    () => [
-      {
-        Header: 'Book Title',
-        accessor: 'Title',
-        Cell: ({ cell: { value }, row: { original } }) => (
-          <Link to={`/book/${original.id}`}>{value}</Link>
-        ),
-      },
-      {
-        Header: 'Rate (votes)',
-        accessor: 'Rate',
-      },
-    ],
-    []
-  );
 
   useEffect(() => {
     async function fetchData() {

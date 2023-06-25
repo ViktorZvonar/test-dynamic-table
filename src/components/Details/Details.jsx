@@ -26,6 +26,10 @@ function Details() {
 
   const handleVote = async type => {
     if (hasVoted) {
+      Notify.init({
+        position: 'center-top',
+        timeout: 3000,
+      });
       Notify.warning("Oops! You've already voted :)");
       return;
     }
