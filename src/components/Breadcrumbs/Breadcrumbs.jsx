@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-const Breadcrumbs = ({ authorName }) => {
+const Breadcrumbs = ({ bookName }) => {
   const { id } = useParams();
 
   return (
@@ -10,7 +10,7 @@ const Breadcrumbs = ({ authorName }) => {
       {id && (
         <>
           <span> {'>'} </span>
-          <Link to={`/author/${id}`}>{authorName}</Link>
+          <Link to={`/book/${id}`}>{bookName}</Link>
         </>
       )}
     </div>

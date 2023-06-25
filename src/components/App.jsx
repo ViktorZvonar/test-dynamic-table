@@ -11,7 +11,7 @@ export const App = () => {
       <h1>Welcome to the Municipal Library Infocenter</h1>
       <Routes>
         <Route path="/" element={<DataTable />} />
-        <Route path="/author/:id" element={<Details />} />
+        <Route path="/book/:id" element={<Details />} />
       </Routes>
     </div>
   );

@@ -10,10 +10,10 @@ function DataTable() {
   const columns = React.useMemo(
     () => [
       {
-        Header: 'Author',
-        accessor: 'Author',
+        Header: 'Book',
+        accessor: 'Title',
         Cell: ({ cell: { value }, row: { original } }) => (
-          <Link to={`/author/${original.id}`}>{value}</Link>
+          <Link to={`/book/${original.id}`}>{value}</Link>
         ),
       },
       {
@@ -38,7 +38,7 @@ function DataTable() {
 
   return (
     <div>
-      <h2 className={styles.heading}>Pick an author</h2>
+      <h2 className={styles.heading}>Pick a book</h2>
       <table {...getTableProps()} className={styles.table}>
         <thead>
           {headerGroups.map(headerGroup => (
