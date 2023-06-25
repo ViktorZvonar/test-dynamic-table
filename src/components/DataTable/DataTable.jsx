@@ -10,11 +10,15 @@ function DataTable() {
   const columns = React.useMemo(
     () => [
       {
-        Header: 'Pick an author',
+        Header: 'Author',
         accessor: 'Author',
         Cell: ({ cell: { value }, row: { original } }) => (
           <Link to={`/author/${original.id}`}>{value}</Link>
         ),
+      },
+      {
+        Header: 'Rate (votes)',
+        accessor: 'Rate',
       },
     ],
     []
@@ -33,29 +37,42 @@ function DataTable() {
     useTable({ columns, data });
 
   return (
-    <table {...getTableProps()} className={styles.table}>
-      <thead>
-        {headerGroups.map(headerGroup => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
-            {headerGroup.headers.map(column => (
-              <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-            ))}
-          </tr>
-        ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
-        {rows.map(row => {
-          prepareRow(row);
-          return (
-            <tr {...row.getRowProps()} tabIndex="0" className={styles.tableRow}>
-              {row.cells.map(cell => {
-                return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>;
-              })}
+    <div>
+      <h2 className={styles.heading}>Pick an author</h2>
+      <table {...getTableProps()} className={styles.table}>
+        <thead>
+          {headerGroups.map(headerGroup => (
+            <tr {...headerGroup.getHeaderGroupProps()}>
+              {headerGroup.headers.map(column => (
+                <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+              ))}
             </tr>
-          );
-        })}
-      </tbody>
-    </table>
+          ))}
+        </thead>
+        <tbody {...getTableBodyProps()}>
+          {rows.map(row => {
+            prepareRow(row);
+            return (
+              <tr
+                {...row.getRowProps()}
+                tabIndex="0"
+                className={
+                  row.original.Rate >= 9
+                    ? `${styles.tableRow} ${styles.recommended}`
+                    : styles.tableRow
+                }
+              >
+                {row.cells.map(cell => {
+                  return (
+                    <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                  );
+                })}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 }
 

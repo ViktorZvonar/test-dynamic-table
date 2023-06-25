@@ -25,8 +25,8 @@ function Details() {
   return (
     <div>
       <Breadcrumbs authorName={authorData.Author} />
-      <h2>{authorData.Author}</h2>
-      <table>
+      <h2 className={styles.heading}>{authorData.Author}</h2>
+      <table className={styles.detailsTable}>
         <tbody>
           <tr tabIndex="0" className={styles.detailRow}>
             <th>Title</th>

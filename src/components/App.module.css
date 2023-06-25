@@ -1,0 +1,15 @@
+.appContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #010101;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}

@@ -22,16 +22,15 @@ export const getData = async () => {
   }
 };
 
-// export const updateData = async tweet => {
-//   try {
-//     const updatedData = {
-//       ...tweet,
-//       followers: tweet.followers,
-//       isFollowing: !tweet.isFollowing,
-//     };
-//     const res = await instance.put(`/${tweet.id}`, updatedTweet);
-//     return res;
-//   } catch (error) {
-//     console.log(error.message);
-//   }
-// };
+export const updateData = async book => {
+  try {
+    const updatedData = {
+      ...book,
+      Rate: book.Rate,
+    };
+    const res = await instance.put(`/${book.id}`, updatedData);
+    return res;
+  } catch (error) {
+    console.log(error.message);
+  }
+};
