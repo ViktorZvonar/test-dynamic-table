@@ -21,7 +21,7 @@ function Details() {
   }, [id]);
 
   if (!bookData) {
-    return <div>Loading...</div>;
+    return;
   }
 
   const handleVote = async type => {
