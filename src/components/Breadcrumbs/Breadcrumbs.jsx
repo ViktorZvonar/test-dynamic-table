@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import styles from './Breadcrumbs.module.css';
 
 const Breadcrumbs = ({ bookName }) => {
   const { id } = useParams();
 
   return (
-    <div>
+    <div className={styles.breadcrumbs}>
       <Link to="/">Home</Link>
       {id && (
         <>

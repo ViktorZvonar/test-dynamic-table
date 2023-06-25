@@ -10,7 +10,7 @@ function DataTable() {
   const columns = React.useMemo(
     () => [
       {
-        Header: 'Book',
+        Header: 'Book Title',
         accessor: 'Title',
         Cell: ({ cell: { value }, row: { original } }) => (
           <Link to={`/book/${original.id}`}>{value}</Link>
@@ -56,11 +56,7 @@ function DataTable() {
               <tr
                 {...row.getRowProps()}
                 tabIndex="0"
-                className={
-                  row.original.Rate >= 9
-                    ? `${styles.tableRow} ${styles.recommended}`
-                    : styles.tableRow
-                }
+                className={styles.tableRow}
               >
                 {row.cells.map(cell => {
                   return (

@@ -1,11 +1,14 @@
 .heading {
-  color: #5a6268; /* Dark grey */
+  color: bisque;
+  background-color: #8a624a;
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .detailsTable {
@@ -22,12 +25,12 @@
 .detailsTable th,
 .detailsTable td {
   padding: 12px 15px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid bisque;
 }
 
 .detailsTable th {
-  background-color: #34495e;
-  color: #fff;
+  background-color: darkseagreen;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -38,5 +41,23 @@
 
 .detailRow:hover,
 .detailRow:focus {
-  background-color: #bdc3c7;
+  color: bisque;
+  background-color: #8a624a;
+}
+
+.voteCell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* optional, if you want to vertically center content */
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px; /* optional, if you want a gap between buttons */
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

@@ -3,6 +3,7 @@ import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import { useParams } from 'react-router-dom';
 import { getData, updateData } from '../../shared/services/api';
 import styles from './Details.module.css';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 function Details() {
   const { id } = useParams();
@@ -23,15 +24,16 @@ function Details() {
     return <div>Loading...</div>;
   }
 
-  const handleVote = async () => {
+  const handleVote = async type => {
     if (hasVoted) {
-      alert("You've already voted.");
+      Notify.warning("Oops! You've already voted :)");
       return;
     }
 
     const updatedBook = {
       ...bookData,
-      Rate: bookData.Rate + 1,
+      Rate:
+        type === 'like' ? bookData.Rate + 1 : Math.max(bookData.Rate - 1, 0),
     };
 
     try {
@@ -71,17 +73,30 @@ function Details() {
             <th>Available</th>
             <td>
               {bookData.Available
-                ? 'Yes, you can borrow'
-                : 'No, it is already borrowed'}
+                ? 'Yes, you can borrow it now'
+                : 'No, someone else borrowed it'}
             </td>
           </tr>
           <tr tabIndex="0" className={styles.detailRow}>
-            <th>Votes</th>
-            <td>
-              {bookData.Rate}
-              <button onClick={handleVote} style={{ marginLeft: '10px' }}>
-                Give your vote as well
-              </button>
+            <th>Leave a vote</th>
+            <td className={styles.voteCell}>
+              <span>{bookData.Rate}</span>
+              <div className={styles.buttonContainer}>
+                <button
+                  aria-label="like"
+                  className={styles.button}
+                  onClick={() => handleVote('like')}
+                >
+                  👍
+                </button>
+                <button
+                  aria-label="dislike"
+                  className={styles.button}
+                  onClick={() => handleVote('dislike')}
+                >
+                  👎
+                </button>
+              </div>
             </td>
           </tr>
         </tbody>
