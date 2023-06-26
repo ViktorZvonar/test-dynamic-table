@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/test-dynamic-table/static/css/main.4e806f13.css",
-    "main.js": "/test-dynamic-table/static/js/main.50369a6a.js",
-    "static/css/444.12f93102.chunk.css": "/test-dynamic-table/static/css/444.12f93102.chunk.css",
+    "main.js": "/test-dynamic-table/static/js/main.d1430d6a.js",
+    "static/css/444.71006723.chunk.css": "/test-dynamic-table/static/css/444.71006723.chunk.css",
     "static/js/444.fce01585.chunk.js": "/test-dynamic-table/static/js/444.fce01585.chunk.js",
-    "static/css/734.196ab63f.chunk.css": "/test-dynamic-table/static/css/734.196ab63f.chunk.css",
-    "static/js/734.57e2b026.chunk.js": "/test-dynamic-table/static/js/734.57e2b026.chunk.js",
+    "static/css/734.21d60867.chunk.css": "/test-dynamic-table/static/css/734.21d60867.chunk.css",
+    "static/js/734.95cff1db.chunk.js": "/test-dynamic-table/static/js/734.95cff1db.chunk.js",
     "static/js/817.e6918573.chunk.js": "/test-dynamic-table/static/js/817.e6918573.chunk.js",
     "static/js/358.33b7dc27.chunk.js": "/test-dynamic-table/static/js/358.33b7dc27.chunk.js",
     "static/media/BG.jpg": "/test-dynamic-table/static/media/BG.2de59943082ed52f4923.jpg",
     "index.html": "/test-dynamic-table/index.html",
     "main.4e806f13.css.map": "/test-dynamic-table/static/css/main.4e806f13.css.map",
-    "main.50369a6a.js.map": "/test-dynamic-table/static/js/main.50369a6a.js.map",
-    "444.12f93102.chunk.css.map": "/test-dynamic-table/static/css/444.12f93102.chunk.css.map",
+    "main.d1430d6a.js.map": "/test-dynamic-table/static/js/main.d1430d6a.js.map",
+    "444.71006723.chunk.css.map": "/test-dynamic-table/static/css/444.71006723.chunk.css.map",
     "444.fce01585.chunk.js.map": "/test-dynamic-table/static/js/444.fce01585.chunk.js.map",
-    "734.196ab63f.chunk.css.map": "/test-dynamic-table/static/css/734.196ab63f.chunk.css.map",
-    "734.57e2b026.chunk.js.map": "/test-dynamic-table/static/js/734.57e2b026.chunk.js.map",
+    "734.21d60867.chunk.css.map": "/test-dynamic-table/static/css/734.21d60867.chunk.css.map",
+    "734.95cff1db.chunk.js.map": "/test-dynamic-table/static/js/734.95cff1db.chunk.js.map",
     "817.e6918573.chunk.js.map": "/test-dynamic-table/static/js/817.e6918573.chunk.js.map",
     "358.33b7dc27.chunk.js.map": "/test-dynamic-table/static/js/358.33b7dc27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e806f13.css",
-    "static/js/main.50369a6a.js"
+    "static/js/main.d1430d6a.js"
   ]
 }
