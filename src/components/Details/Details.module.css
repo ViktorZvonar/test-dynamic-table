@@ -47,8 +47,16 @@
 
 .button {
   background-color: transparent;
-  border: none;
+  padding: 0 5px;
+  border: 1px solid #8a624a;
+  border-radius: 10px;
   cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  border: 1px solid bisque;
 }
 
 @media screen and (min-width: 480px) {

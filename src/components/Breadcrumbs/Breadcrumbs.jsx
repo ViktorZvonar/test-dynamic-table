@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link, useParams } from 'react-router-dom';
 import styles from './Breadcrumbs.module.css';
 
@@ -7,7 +8,9 @@ const Breadcrumbs = ({ bookName }) => {
 
   return (
     <div className={styles.breadcrumbs}>
-      <Link to="/">Home</Link>
+      <Link to="/" aria-label="Home">
+        Home
+      </Link>
       {id && (
         <>
           <span> {'>'} </span>
@@ -16,6 +19,13 @@ const Breadcrumbs = ({ bookName }) => {
       )}
     </div>
   );
+};
+
+Breadcrumbs.propTypes = {
+  bookName: PropTypes.string.isRequired,
+};
+Breadcrumbs.defaultProps = {
+  bookName: '',
 };
 
 export default Breadcrumbs;
