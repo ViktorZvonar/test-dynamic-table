@@ -10,7 +10,7 @@
 
 .detailsTable th,
 .detailsTable td {
-  padding: 12px 15px;
+  padding: 12px 7px;
 }
 
 .detailsTable tr:not(:last-child) th,
@@ -65,6 +65,12 @@
     font-size: 1.4em;
     margin: 20px auto;
   }
+
+  .detailsTable th,
+  .detailsTable td {
+    padding: 12px 15px;
+  }
+
   .button {
     font-size: 1em;
   }

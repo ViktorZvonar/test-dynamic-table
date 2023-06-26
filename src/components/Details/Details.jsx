@@ -15,6 +15,8 @@ function Details() {
       const res = await getData();
       const book = res.data.find(item => item.id === id);
       setBookData(book);
+      const userVote = localStorage.getItem(`userVote-${id}`);
+      setHasVoted(userVote === 'true');
     };
 
     fetchData();
@@ -45,6 +47,7 @@ function Details() {
       if (res.data) {
         setBookData(updatedBook);
         setHasVoted(true);
+        localStorage.setItem(`userVote-${id}`, 'true');
       }
     } catch (error) {
       console.error(error.message);
