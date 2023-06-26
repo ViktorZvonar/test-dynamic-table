@@ -10,10 +10,42 @@
 
 h1 {
   color: #8a624a;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 5px 20px;
+  text-align: center;
   background-color: bisque;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 480px) {
+  .appContainer {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .appContainer {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+    padding: 5px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .appContainer {
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
 }

@@ -9,7 +9,7 @@ const Details = React.lazy(() => import('./Details/Details'));
 export const App = () => {
   return (
     <div className={styles.appContainer}>
-      <h1>Welcome to the Municipal Library Infocenter</h1>
+      <h1>Municipal Library Infocenter</h1>
       <Suspense
         fallback={
           <div

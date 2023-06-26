@@ -76,9 +76,7 @@ function Details() {
           <tr tabIndex="0" className={styles.detailRow}>
             <th>Available</th>
             <td>
-              {bookData.Available
-                ? 'Yes, you can borrow it now'
-                : 'No, someone else borrowed it'}
+              {bookData.Available ? 'Yes, you can borrow' : 'No, you missed it'}
             </td>
           </tr>
           <tr tabIndex="0" className={styles.detailRow}>

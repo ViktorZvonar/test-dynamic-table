@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
 body {
   margin: 0;
@@ -17,4 +17,35 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h2 {
+  color: bisque;
+  background-color: #8a624a;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 2.2em;
+  }
 }

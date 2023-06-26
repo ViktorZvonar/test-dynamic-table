@@ -21,7 +21,7 @@ function DataTable() {
 
   return (
     <div>
-      <h2 className={styles.heading}>Pick a book</h2>
+      <h2>Welcome! Pick a book</h2>
       <table {...getTableProps()} className={styles.table}>
         <thead>
           {headerGroups.map(headerGroup => (
