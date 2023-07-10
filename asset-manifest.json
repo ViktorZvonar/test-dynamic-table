@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "https://lively-tapioca-344628.netlify.app/static/css/main.5f6877cf.css",
-    "main.js": "https://lively-tapioca-344628.netlify.app/static/js/main.32328f4d.js",
-    "static/css/444.71006723.chunk.css": "https://lively-tapioca-344628.netlify.app/static/css/444.71006723.chunk.css",
-    "static/js/444.fce01585.chunk.js": "https://lively-tapioca-344628.netlify.app/static/js/444.fce01585.chunk.js",
-    "static/css/734.21d60867.chunk.css": "https://lively-tapioca-344628.netlify.app/static/css/734.21d60867.chunk.css",
-    "static/js/734.95cff1db.chunk.js": "https://lively-tapioca-344628.netlify.app/static/js/734.95cff1db.chunk.js",
-    "static/js/817.e6918573.chunk.js": "https://lively-tapioca-344628.netlify.app/static/js/817.e6918573.chunk.js",
-    "static/js/358.33b7dc27.chunk.js": "https://lively-tapioca-344628.netlify.app/static/js/358.33b7dc27.chunk.js",
-    "static/media/BG.jpg": "https://lively-tapioca-344628.netlify.app/static/media/BG.2de59943082ed52f4923.jpg",
-    "index.html": "https://lively-tapioca-344628.netlify.app/index.html",
-    "main.5f6877cf.css.map": "https://lively-tapioca-344628.netlify.app/static/css/main.5f6877cf.css.map",
-    "main.32328f4d.js.map": "https://lively-tapioca-344628.netlify.app/static/js/main.32328f4d.js.map",
-    "444.71006723.chunk.css.map": "https://lively-tapioca-344628.netlify.app/static/css/444.71006723.chunk.css.map",
-    "444.fce01585.chunk.js.map": "https://lively-tapioca-344628.netlify.app/static/js/444.fce01585.chunk.js.map",
-    "734.21d60867.chunk.css.map": "https://lively-tapioca-344628.netlify.app/static/css/734.21d60867.chunk.css.map",
-    "734.95cff1db.chunk.js.map": "https://lively-tapioca-344628.netlify.app/static/js/734.95cff1db.chunk.js.map",
-    "817.e6918573.chunk.js.map": "https://lively-tapioca-344628.netlify.app/static/js/817.e6918573.chunk.js.map",
-    "358.33b7dc27.chunk.js.map": "https://lively-tapioca-344628.netlify.app/static/js/358.33b7dc27.chunk.js.map"
+    "main.css": "https://mlibraryinfo.netlify.app/static/css/main.74479ff3.css",
+    "main.js": "https://mlibraryinfo.netlify.app/static/js/main.3227e06f.js",
+    "static/css/444.71006723.chunk.css": "https://mlibraryinfo.netlify.app/static/css/444.71006723.chunk.css",
+    "static/js/444.fce01585.chunk.js": "https://mlibraryinfo.netlify.app/static/js/444.fce01585.chunk.js",
+    "static/css/734.21d60867.chunk.css": "https://mlibraryinfo.netlify.app/static/css/734.21d60867.chunk.css",
+    "static/js/734.95cff1db.chunk.js": "https://mlibraryinfo.netlify.app/static/js/734.95cff1db.chunk.js",
+    "static/js/817.e6918573.chunk.js": "https://mlibraryinfo.netlify.app/static/js/817.e6918573.chunk.js",
+    "static/js/358.33b7dc27.chunk.js": "https://mlibraryinfo.netlify.app/static/js/358.33b7dc27.chunk.js",
+    "static/media/BG.jpg": "https://mlibraryinfo.netlify.app/static/media/BG.2de59943082ed52f4923.jpg",
+    "index.html": "https://mlibraryinfo.netlify.app/index.html",
+    "main.74479ff3.css.map": "https://mlibraryinfo.netlify.app/static/css/main.74479ff3.css.map",
+    "main.3227e06f.js.map": "https://mlibraryinfo.netlify.app/static/js/main.3227e06f.js.map",
+    "444.71006723.chunk.css.map": "https://mlibraryinfo.netlify.app/static/css/444.71006723.chunk.css.map",
+    "444.fce01585.chunk.js.map": "https://mlibraryinfo.netlify.app/static/js/444.fce01585.chunk.js.map",
+    "734.21d60867.chunk.css.map": "https://mlibraryinfo.netlify.app/static/css/734.21d60867.chunk.css.map",
+    "734.95cff1db.chunk.js.map": "https://mlibraryinfo.netlify.app/static/js/734.95cff1db.chunk.js.map",
+    "817.e6918573.chunk.js.map": "https://mlibraryinfo.netlify.app/static/js/817.e6918573.chunk.js.map",
+    "358.33b7dc27.chunk.js.map": "https://mlibraryinfo.netlify.app/static/js/358.33b7dc27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f6877cf.css",
-    "static/js/main.32328f4d.js"
+    "static/css/main.74479ff3.css",
+    "static/js/main.3227e06f.js"
   ]
 }
