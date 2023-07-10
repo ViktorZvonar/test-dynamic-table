@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-dynamic-table/static/css/main.4e806f13.css",
-    "main.js": "/test-dynamic-table/static/js/main.d1430d6a.js",
+    "main.js": "/test-dynamic-table/static/js/main.9859ff82.js",
     "static/css/444.71006723.chunk.css": "/test-dynamic-table/static/css/444.71006723.chunk.css",
     "static/js/444.fce01585.chunk.js": "/test-dynamic-table/static/js/444.fce01585.chunk.js",
     "static/css/734.21d60867.chunk.css": "/test-dynamic-table/static/css/734.21d60867.chunk.css",
@@ -11,7 +11,7 @@
     "static/media/BG.jpg": "/test-dynamic-table/static/media/BG.2de59943082ed52f4923.jpg",
     "index.html": "/test-dynamic-table/index.html",
     "main.4e806f13.css.map": "/test-dynamic-table/static/css/main.4e806f13.css.map",
-    "main.d1430d6a.js.map": "/test-dynamic-table/static/js/main.d1430d6a.js.map",
+    "main.9859ff82.js.map": "/test-dynamic-table/static/js/main.9859ff82.js.map",
     "444.71006723.chunk.css.map": "/test-dynamic-table/static/css/444.71006723.chunk.css.map",
     "444.fce01585.chunk.js.map": "/test-dynamic-table/static/js/444.fce01585.chunk.js.map",
     "734.21d60867.chunk.css.map": "/test-dynamic-table/static/css/734.21d60867.chunk.css.map",
@@ -21,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.4e806f13.css",
-    "static/js/main.d1430d6a.js"
+    "static/js/main.9859ff82.js"
   ]
 }
